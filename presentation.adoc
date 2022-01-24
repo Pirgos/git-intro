@@ -1,0 +1,152 @@
+:author: Szymon Rogalski
+:version: v. 1.0
+:date: 2022-01-20
+
+:example-caption!:
+:imagesdir: images
+:backend: revealjs
+:customcss: ./css/theme-custom.css
+:title-slide-background-image: title.jpg
+:title-slide-transition: zoom
+:title-slide-transition-speed: slow
+
+:data-slide-background-image: slide.png
+    
+
+= Git - overview
+:customcss: ./css/title.css
+
+
+== Installation
+
+https://git-scm.com/download
+
+[small]
+== Basic Configuration
+```
+username: git config --global user.name "Szymon Rogalski"
+```
+
+```
+email: git config --global user.email my.email@cgi.com
+```
+
+[little]]
+== Checkout code
+
+```
+git clone https://proactioneu.ent.cgi.com/gitlab/cee/ARMAM/red_team_training.git
+```
+
++++<p align="left"><a href="https://proactioneu.ent.cgi.com/gitlab/cee/users/sign_in" target="_blank">GitLab CGI</a></p>+++
+
+
+== Authentication
+
+```
+ssh-keygen -t ed25519 -C "EDSN"
+
+cat ~/.ssh/id_ed25519.pub | clip
+
+paste in GitLab->Preferences->SSH key
+```
+
+
+
++++<small>+++
+details: https://docs.gitlab.com/ee/ssh/
++++</small>+++
+
+
+
+== Tools
++++<p align="left"><small>+++
+`git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"`
++++<br>+++
++++<br>+++
+git config --global diff.external "'C:\Program Files (x86)\WinMerge\WinMergeU.exe'"
++++</small></p>+++
+
+
+//+++<br>+++
+//+++<br>+++
+//git config --global --unset diff.external
+
+== .gitignore
+
+image::pretend.gif[alt text,width=600px]
+
+
+== Typical Scenario
+
+* git fetch
+* git checkout -b <new_branch>
+* ... code changes
+* git add
+* git commit 
+* git push
+
+[%notitle]
+== Diagram
+
+image::git_flow.png[alt text,width=600px]
+
+
+
+== Finally
+
+image::git-merge.gif[alt text,width=600px]
+
+
+== Aliases
+
+* git config --global alias.co checkout
+* git config --global alias.br branch
+* git config --global alias.ci commit
+* git config --global alias.st status
+
+== Documentation
+
+https://git-scm.com/doc
+
+== Git commands in Easy Way
+
+https://www.mytechmint.com/understanding-useful-git-commands-in-easy-way/
+
+
+== Branching strategies
+
+
+[%notitle]
+=== bs video
+
+
+video::7lgGEXpsflI[youtube, start=100, options=autoplay]
+// +++<video controls src="https://youtu.be/7lgGEXpsflI?t=51"></video>+++
+
+
+
+== Courses
+
+https://share.percipio.com/cd/HjxEwVQmQ
+
+https://www.youtube.com/watch?v=RGOj5yH7evk
+
+
+
+== GtLab
+
+https://proactioneu.ent.cgi.com/gitlab/cee/
+
+
+== I do not know it (i hope yet)
+
+
+image::idk.gif[alt text,width=600px]
+
+
+== But, what I notice
+
+- commit which contain jira ticket - connect this with jira
+
+

@@ -1,0 +1,18 @@
+
+# Instalation: 
+    base on https://docs.asciidoctor.org/reveal.js-converter/latest/setup/node-js-setup/
+
+    . `npm init -y`
+    . `npm i --save asciidoctor @asciidoctor/reveal.js`
+
+# Verification:
+    .\node_modules\.bin\asciidoctor-revealjs.cmd --version
+
+
+# Converting:
+    
+    converting into slides: 
+
+    .\node_modules\.bin\asciidoctor-revealjs.cmd presentation.adoc
+    or
+    node .\convert-slides.js
